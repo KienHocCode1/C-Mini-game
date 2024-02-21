@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment4_000356049</title>
+  <script src="js.js" defer></script>
+  <link href="css.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!--
+      Author: Trung Kien Bui, 000356049
+      Date: July 27, 2023
+      Assignment 4 Practice using JavaScript to create a web application using SVG, JavaScript, JavaScript Even Handling, 
+      DOM manipulation, and concept of state and variables within a web app.
+
+      File name: TrungKienBuiAssignment4
+    -->
+  </header>
+  <main>
+    <div class="editText">
+      <label for="colorInput">Set color for your Shape</label>
+      <input type="text" id="colorInput" placeholder="Type a color and press Enter(ex: yellow NO SPACE)" size="40">
+    </div>
+
+    <div class="editText">
+      <label for="shapeInput">Set WIDTH for your Shape </label>
+      <input type="text" id="shapeInput" placeholder="Enter a number and press Enter(ex: 30)" size="30">
+    </div>
+    <div id="deathMessage">
+      Collision Detected!<br>
+      Game over!<br>
+      Press Reset Button -> select Easy/ Hard Mode
+    </div>
+
+    <svg id="canvas" width="1500" height="800" style="background-color: lightblue;" viewBox="0 0 1500 800" xmlns="http://www.w3.org/2000/svg">
+      <path id="myPath" fill="none" stroke="red" d="M 300 100 q 200 300 400 0" />
+      <text font-size="30" fill="black">
+        <textPath href="#myPath">Assignment 5 JavaScript_000356049</textPath>
+      </text>
+
+      <rect x="0" y="600" width="1500" height="200" fill="green" />
+
+      <text x="40" y="450">*Press SPACE to jump*</text>
+      <text x="350" y="30" font-size="35" fill="black">Pick a theme below</text>
+      <text x="750" y="330" font-size="22" fill="black">How to play: *Press SPACE to Jump*</text>
+      <text x="750" y="350" font-size="22" fill="black">Don't let the blue square touch you.</text>
+      <text x="710" y="370" font-size="22" fill="black">Your score will increase by 1 for every second.</text>
+      <text x="800" y="70" font-size="30" fill="red" id="textUpdate">Your score: 0 points</text>
+      <text x="770" y="120" font-size="22">Click one of these mode to PLAY</text>
+      <!-- https://stackoverflow.com/questions/39917883/button-element-inside-svg 
+                This is the website I borrowed idea how to add button to SVG canvas
+        -->
+      <foreignObject x="270" y="50" width="200" height="100">
+          <button id="nightTime">Night Time</button>
+      </foreignObject>
+
+      <foreignObject x="420" y="50" width="200" height="100">
+          <button id="dayTime">Day Time</button>
+      </foreignObject>
+
+      <foreignObject x="570" y="50" width="200" height="100">
+          <button id="sunDown">Sun Down</button>
+      </foreignObject>
+
+      <foreignObject x="800" y="130" width="200" height="100">
+          <button id="playBtn">Easy Mode</button>
+      </foreignObject>
+
+      <foreignObject x="930" y="130" width="200" height="100">
+          <button id="playBtnHard">Hard Mode</button>
+      </foreignObject>
+
+      <foreignObject x="1100" y="100" width="200" height="100">
+          <button id="startOver">Reset Button</button>
+      </foreignObject>
+    </svg>
+  </main>
+
+  <footer>
+    &#169; 2023, Trung Kien Bui, Mohawk College
+  </footer>
+</body>
+
+</html>

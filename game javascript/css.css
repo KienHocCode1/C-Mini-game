@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  <!--
+      Author: Trung Kien Bui, 000356049
+      Date: July 27, 2023
+      Assignment 4 Practice using JavaScript to create a web application using SVG, JavaScript, JavaScript Even Handling, 
+      DOM manipulation, and concept of state and variables within a web app.
+
+      File name: TrungKienBuiAssignment4
+    -->   
+*/
+
+/* message POP UP when colide */
+#deathMessage {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+        font-size: 40px;
+    display: none;
+    text-align: center;
+}
+
+/* Styling for sunDown button */
+#sunDown {
+    font-size: 22px;
+    background-color: orange;
+    color: white;
+    border-color: white;
+    border-radius: 30px;
+}
+
+/* Styling for nightTime button */
+#nightTime {
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 30px;
+}
+
+/* Styling for dayTime button*/
+#dayTime {
+    font-size: 22px;
+    background-color: yellow;
+    color: red;
+    border-color: green;
+    border-radius: 30px;
+}
+
+/* Styling for Easy Mode Button */
+#playBtn {
+    font-size: 25px;
+    background-color: aqua;
+    color: rgb(25, 0, 247);
+    border-color: aqua;
+    border-radius: 25px;
+}
+
+/*Styling for Hard Mode Button */
+#playBtnHard {
+    font-size: 25px;
+    background-color: chartreuse;
+    color: purple;
+    border-color: wheat;
+    border-radius: 25px;
+}
+
+/* Styling for Reset Button */
+#startOver {
+    font-size: 20px;
+    padding: 15px;
+    background-color: white;
+    color: black(25, 0, 247);
+    border-color: aqua;
+    border-radius: 25px;
+}
+
+/* Styling for label text display to modify Shape and color */
+.editText {
+    text-align: center;
+    background-color: lightblue;
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 25px;
+    color: brown;
+    font-weight: bold;
+    
+}
+
+/**************************** Footer *********************/
+footer {
+    text-align: center;
+    font-size: 20px;
+}
+#canvas{
+    /* display: block;
+    margin: 0 auto; */
+    width: 100%;
+    height: auto;
+}
+/* ===============================
+   Mobile Styles: 0px to 320px 
+   ===============================
+*/
+
+@media only screen and (max-width: 320px) {
+    .editText, footer {
+        font-size: 5px;
+    }
+    #deathMessage{
+        font-size: 5px;
+    }
+}
+
+/* ===============================
+   Mobile Styles: from 320px and up
+   ===============================
+*/
+@media only screen and (max-width: 540px) {
+    .editText, footer {
+        font-size: 9px;
+    }
+    #deathMessage{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .editText, footer {
+        font-size: 16px;
+    }
+    #deathMessage{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .editText, footer {
+        font-size: 19px;
+    }
+    #deathMessage{
+        font-size: 20px;
+    }
+}
